@@ -22,8 +22,8 @@
 		388617FA278AA8C2008D8E58 /* libIex-3_1.29.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 388617F9278AA8C2008D8E58 /* libIex-3_1.29.0.0.dylib */; };
 		388F6D87277C4B0600FA247F /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 388F6D85277C4A0700FA247F /* libGLTools.a */; };
 		388F6D8F277C5BEE00FA247F /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 388F6D8E277C5BEE00FA247F /* libGLEW.a */; };
-		38C060482815191700A3CA85 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38C060462815191700A3CA85 /* Application.cpp */; };
-		38EC8DA52792CD2200D4CFB1 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 38EC8DA42792CD2200D4CFB1 /* glad.c */; };
+		38C061A02815418900A3CA85 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38C0619E2815418900A3CA85 /* Application.cpp */; };
+		38C061B12815432C00A3CA85 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38C061B02815432C00A3CA85 /* Log.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,36 +47,21 @@
 		3867FA2327772C4A005E1948 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		3867FA2527772C6A005E1948 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../usr/local/lib/libglfw3.a; sourceTree = "<group>"; };
 		388617E32786F884008D8E58 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		388617E727886CE3008D8E58 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		388617E927886F63008D8E58 /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSOIL.a; path = ../../../../usr/local/lib/libSOIL.a; sourceTree = "<group>"; };
 		388617EC278A9BCC008D8E58 /* libOpenEXR-3_1.29.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libOpenEXR-3_1.29.0.0.dylib"; path = "../../../../usr/local/lib/libOpenEXR-3_1.29.0.0.dylib"; sourceTree = "<group>"; };
 		388617EE278A9F87008D8E58 /* libImath-3_2.29.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libImath-3_2.29.0.0.dylib"; path = "../../../../usr/local/lib/libImath-3_2.29.0.0.dylib"; sourceTree = "<group>"; };
 		388617F4278AA730008D8E58 /* libOpenEXRCore-3_1.29.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libOpenEXRCore-3_1.29.0.0.dylib"; path = "../../../../usr/local/lib/libOpenEXRCore-3_1.29.0.0.dylib"; sourceTree = "<group>"; };
 		388617F6278AA731008D8E58 /* libOpenEXRUtil-3_1.29.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libOpenEXRUtil-3_1.29.0.0.dylib"; path = "../../../../usr/local/lib/libOpenEXRUtil-3_1.29.0.0.dylib"; sourceTree = "<group>"; };
 		388617F9278AA8C2008D8E58 /* libIex-3_1.29.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libIex-3_1.29.0.0.dylib"; path = "../../../../usr/local/lib/libIex-3_1.29.0.0.dylib"; sourceTree = "<group>"; };
-		388617FD278AEBED008D8E58 /* mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; };
-		388617FE278AEBED008D8E58 /* entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = entity.h; sourceTree = "<group>"; };
-		388617FF278AEBED008D8E58 /* animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = animation.h; sourceTree = "<group>"; };
-		38861800278AEBED008D8E58 /* model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
-		38861801278AEBEE008D8E58 /* bone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bone.h; sourceTree = "<group>"; };
-		38861802278AEBEE008D8E58 /* shader_m.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader_m.h; sourceTree = "<group>"; };
-		38861803278AEBEE008D8E58 /* model_animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = model_animation.h; sourceTree = "<group>"; };
-		38861804278AEBEE008D8E58 /* filesystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filesystem.h; sourceTree = "<group>"; };
-		38861805278AEBEE008D8E58 /* shader_s.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader_s.h; sourceTree = "<group>"; };
-		38861806278AEBEE008D8E58 /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
-		38861807278AEBEE008D8E58 /* animdata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = animdata.h; sourceTree = "<group>"; };
-		38861808278AEBEE008D8E58 /* animator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = animator.h; sourceTree = "<group>"; };
-		38861809278AEBEE008D8E58 /* shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
-		3886180A278AEBEE008D8E58 /* assimp_glm_helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = assimp_glm_helpers.h; sourceTree = "<group>"; };
-		3886180C278B059F008D8E58 /* root_directory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = root_directory.h; sourceTree = "<group>"; };
 		388F6D85277C4A0700FA247F /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLTools.a; path = ../../../../usr/local/lib/libGLTools.a; sourceTree = "<group>"; };
 		388F6D8E277C5BEE00FA247F /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../usr/local/lib/libGLEW.a; sourceTree = "<group>"; };
-		38C06043281518E800A3CA85 /* Core.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Core.hpp; sourceTree = "<group>"; };
-		38C060462815191700A3CA85 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
-		38C060472815191700A3CA85 /* Application.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
-		38C0604C28151B6300A3CA85 /* Hazel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hazel.hpp; sourceTree = "<group>"; };
-		38C0605228151CDB00A3CA85 /* EntryPoint.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EntryPoint.hpp; sourceTree = "<group>"; };
-		38EC8DA42792CD2200D4CFB1 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../../../Downloads/opengl/glad/src/glad.c; sourceTree = "<group>"; };
+		38C0619E2815418900A3CA85 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		38C0619F2815418900A3CA85 /* Application.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
+		38C061AC2815432B00A3CA85 /* Core.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Core.hpp; sourceTree = "<group>"; };
+		38C061AD2815432C00A3CA85 /* Hazel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Hazel.hpp; sourceTree = "<group>"; };
+		38C061AE2815432C00A3CA85 /* Log.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Log.hpp; sourceTree = "<group>"; };
+		38C061AF2815432C00A3CA85 /* EntryPoint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EntryPoint.hpp; sourceTree = "<group>"; };
+		38C061B02815432C00A3CA85 /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,11 +109,8 @@
 		3867FA1227772C0D005E1948 /* OpenglLearn */ = {
 			isa = PBXGroup;
 			children = (
-				38C060412815183900A3CA85 /* Hazel */,
-				388617FC278AEBB1008D8E58 /* include */,
+				38C0619D2815414A00A3CA85 /* Hazel */,
 				3867FA1327772C0D005E1948 /* main.cpp */,
-				38EC8DA42792CD2200D4CFB1 /* glad.c */,
-				388617E727886CE3008D8E58 /* stb_image.h */,
 			);
 			path = OpenglLearn;
 			sourceTree = "<group>";
@@ -154,36 +136,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		388617FC278AEBB1008D8E58 /* include */ = {
+		38C0619D2815414A00A3CA85 /* Hazel */ = {
 			isa = PBXGroup;
 			children = (
-				388617FF278AEBED008D8E58 /* animation.h */,
-				38861808278AEBEE008D8E58 /* animator.h */,
-				38861807278AEBEE008D8E58 /* animdata.h */,
-				3886180C278B059F008D8E58 /* root_directory.h */,
-				3886180A278AEBEE008D8E58 /* assimp_glm_helpers.h */,
-				38861801278AEBEE008D8E58 /* bone.h */,
-				38861806278AEBEE008D8E58 /* camera.h */,
-				388617FE278AEBED008D8E58 /* entity.h */,
-				38861804278AEBEE008D8E58 /* filesystem.h */,
-				388617FD278AEBED008D8E58 /* mesh.h */,
-				38861803278AEBEE008D8E58 /* model_animation.h */,
-				38861800278AEBED008D8E58 /* model.h */,
-				38861802278AEBEE008D8E58 /* shader_m.h */,
-				38861805278AEBEE008D8E58 /* shader_s.h */,
-				38861809278AEBEE008D8E58 /* shader.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		38C060412815183900A3CA85 /* Hazel */ = {
-			isa = PBXGroup;
-			children = (
-				38C06043281518E800A3CA85 /* Core.hpp */,
-				38C060462815191700A3CA85 /* Application.cpp */,
-				38C060472815191700A3CA85 /* Application.hpp */,
-				38C0604C28151B6300A3CA85 /* Hazel.hpp */,
-				38C0605228151CDB00A3CA85 /* EntryPoint.hpp */,
+				38C0619E2815418900A3CA85 /* Application.cpp */,
+				38C0619F2815418900A3CA85 /* Application.hpp */,
+				38C061AC2815432B00A3CA85 /* Core.hpp */,
+				38C061AF2815432C00A3CA85 /* EntryPoint.hpp */,
+				38C061AD2815432C00A3CA85 /* Hazel.hpp */,
+				38C061B02815432C00A3CA85 /* Log.cpp */,
+				38C061AE2815432C00A3CA85 /* Log.hpp */,
 			);
 			path = Hazel;
 			sourceTree = "<group>";
@@ -244,9 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38C060482815191700A3CA85 /* Application.cpp in Sources */,
+				38C061B12815432C00A3CA85 /* Log.cpp in Sources */,
 				3867FA1427772C0D005E1948 /* main.cpp in Sources */,
-				38EC8DA52792CD2200D4CFB1 /* glad.c in Sources */,
+				38C061A02815418900A3CA85 /* Application.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

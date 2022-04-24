@@ -1,0 +1,3 @@
+[submodule "OpenglLearn/Hazel/vendor/spdlog"]
+	path = OpenglLearn/Hazel/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git
