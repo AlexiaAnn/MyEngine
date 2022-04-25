@@ -8,7 +8,8 @@
 #ifndef Application_hpp
 #define Application_hpp
 #include <iostream>
-
+#include "Events/ApplicationEvent.hpp"
+#include "Log.hpp"
 namespace Hazel {
 class Application{
 public:

@@ -8,6 +8,7 @@
 #ifndef Hazel_hpp
 #define Hazel_hpp
 
+
 #include "Application.hpp"
 #include "Log.hpp"
 #include "EntryPoint.hpp"

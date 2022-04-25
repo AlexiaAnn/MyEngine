@@ -11,5 +11,7 @@ Application::Application(){}
 Application::~Application(){}
 void Application::Run(){
     std::cout<<"application is running"<<std::endl;
+    WindowResizeEvent e(100, 200);
+    HZ_TRACE(e.ToString());
 }
 };

@@ -55,6 +55,10 @@
 		388617F9278AA8C2008D8E58 /* libIex-3_1.29.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libIex-3_1.29.0.0.dylib"; path = "../../../../usr/local/lib/libIex-3_1.29.0.0.dylib"; sourceTree = "<group>"; };
 		388F6D85277C4A0700FA247F /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLTools.a; path = ../../../../usr/local/lib/libGLTools.a; sourceTree = "<group>"; };
 		388F6D8E277C5BEE00FA247F /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../usr/local/lib/libGLEW.a; sourceTree = "<group>"; };
+		3895028728166C210093E5D1 /* KeyCodes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = KeyCodes.hpp; sourceTree = "<group>"; };
+		3895028828166C210093E5D1 /* MouseCodes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MouseCodes.hpp; sourceTree = "<group>"; };
+		3895028928166C330093E5D1 /* KeyEvent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = KeyEvent.hpp; sourceTree = "<group>"; };
+		3895028A28166C330093E5D1 /* MouseEvents.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MouseEvents.hpp; sourceTree = "<group>"; };
 		38C0619E2815418900A3CA85 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		38C0619F2815418900A3CA85 /* Application.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
 		38C061AC2815432B00A3CA85 /* Core.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Core.hpp; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 		38C061AE2815432C00A3CA85 /* Log.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Log.hpp; sourceTree = "<group>"; };
 		38C061AF2815432C00A3CA85 /* EntryPoint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EntryPoint.hpp; sourceTree = "<group>"; };
 		38C061B02815432C00A3CA85 /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
+		38C061B5281593BD00A3CA85 /* Event.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Event.hpp; sourceTree = "<group>"; };
+		38C061BA2815968E00A3CA85 /* ApplicationEvent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ApplicationEvent.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,9 +142,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3895028628166C210093E5D1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3895028728166C210093E5D1 /* KeyCodes.hpp */,
+				3895028828166C210093E5D1 /* MouseCodes.hpp */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		38C0619D2815414A00A3CA85 /* Hazel */ = {
 			isa = PBXGroup;
 			children = (
+				3895028628166C210093E5D1 /* Core */,
+				38C061B3281593AC00A3CA85 /* Events */,
 				38C0619E2815418900A3CA85 /* Application.cpp */,
 				38C0619F2815418900A3CA85 /* Application.hpp */,
 				38C061AC2815432B00A3CA85 /* Core.hpp */,
@@ -148,6 +165,17 @@
 				38C061AE2815432C00A3CA85 /* Log.hpp */,
 			);
 			path = Hazel;
+			sourceTree = "<group>";
+		};
+		38C061B3281593AC00A3CA85 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				3895028928166C330093E5D1 /* KeyEvent.hpp */,
+				3895028A28166C330093E5D1 /* MouseEvents.hpp */,
+				38C061B5281593BD00A3CA85 /* Event.hpp */,
+				38C061BA2815968E00A3CA85 /* ApplicationEvent.hpp */,
+			);
+			path = Events;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
