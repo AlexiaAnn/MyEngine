@@ -1,7 +1,7 @@
 #pragma one
 
 #include "Event.hpp"
-#include "Core/MouseCodes.hpp"
+#include "MouseCodes.hpp"
 
 namespace Hazel{
 class MouseMovedEvent:public Event{

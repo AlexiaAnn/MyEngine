@@ -22,8 +22,16 @@
 		388617FA278AA8C2008D8E58 /* libIex-3_1.29.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 388617F9278AA8C2008D8E58 /* libIex-3_1.29.0.0.dylib */; };
 		388F6D87277C4B0600FA247F /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 388F6D85277C4A0700FA247F /* libGLTools.a */; };
 		388F6D8F277C5BEE00FA247F /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 388F6D8E277C5BEE00FA247F /* libGLEW.a */; };
+		38950293281676BE0093E5D1 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38950291281676BE0093E5D1 /* Window.cpp */; };
+		3895029A281678E70093E5D1 /* MacWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38950298281678E70093E5D1 /* MacWindow.cpp */; };
+		3895029F28167AAE0093E5D1 /* GraphicsContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3895029D28167AAE0093E5D1 /* GraphicsContext.cpp */; };
+		389502A328167BE60093E5D1 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 389502A128167BE60093E5D1 /* Renderer.cpp */; };
+		389502A728167C1A0093E5D1 /* RenderAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 389502A528167C1A0093E5D1 /* RenderAPI.cpp */; };
+		389502B7281681BD0093E5D1 /* OpenGLContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 389502B5281681BC0093E5D1 /* OpenGLContext.cpp */; };
 		38C061A02815418900A3CA85 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38C0619E2815418900A3CA85 /* Application.cpp */; };
 		38C061B12815432C00A3CA85 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38C061B02815432C00A3CA85 /* Log.cpp */; };
+		38C6DF9C281E89E50082BB68 /* Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38C6DF9A281E89E50082BB68 /* Layer.cpp */; };
+		38C6DFA0281E8AAD0082BB68 /* LayerStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38C6DF9E281E8AAD0082BB68 /* LayerStack.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		384E8685281A47B0008D3D7B /* Input.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Input.hpp; sourceTree = "<group>"; };
 		3867FA1027772C0D005E1948 /* OpenglLearn */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenglLearn; sourceTree = BUILT_PRODUCTS_DIR; };
 		3867FA1327772C0D005E1948 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3867FA1C27772C1D005E1948 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -59,6 +68,20 @@
 		3895028828166C210093E5D1 /* MouseCodes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MouseCodes.hpp; sourceTree = "<group>"; };
 		3895028928166C330093E5D1 /* KeyEvent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = KeyEvent.hpp; sourceTree = "<group>"; };
 		3895028A28166C330093E5D1 /* MouseEvents.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MouseEvents.hpp; sourceTree = "<group>"; };
+		3895028D281676110093E5D1 /* Base.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Base.hpp; sourceTree = "<group>"; };
+		38950291281676BE0093E5D1 /* Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		38950292281676BE0093E5D1 /* Window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
+		38950298281678E70093E5D1 /* MacWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MacWindow.cpp; sourceTree = "<group>"; };
+		38950299281678E70093E5D1 /* MacWindow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MacWindow.hpp; sourceTree = "<group>"; };
+		3895029D28167AAE0093E5D1 /* GraphicsContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicsContext.cpp; sourceTree = "<group>"; };
+		3895029E28167AAE0093E5D1 /* GraphicsContext.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphicsContext.hpp; sourceTree = "<group>"; };
+		389502A128167BE60093E5D1 /* Renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		389502A228167BE60093E5D1 /* Renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
+		389502A528167C1A0093E5D1 /* RenderAPI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RenderAPI.cpp; sourceTree = "<group>"; };
+		389502A628167C1A0093E5D1 /* RenderAPI.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RenderAPI.hpp; sourceTree = "<group>"; };
+		389502AA28167EDF0093E5D1 /* Assert.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Assert.hpp; sourceTree = "<group>"; };
+		389502B5281681BC0093E5D1 /* OpenGLContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLContext.cpp; sourceTree = "<group>"; };
+		389502B6281681BD0093E5D1 /* OpenGLContext.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenGLContext.hpp; sourceTree = "<group>"; };
 		38C0619E2815418900A3CA85 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		38C0619F2815418900A3CA85 /* Application.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
 		38C061AC2815432B00A3CA85 /* Core.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Core.hpp; sourceTree = "<group>"; };
@@ -68,6 +91,10 @@
 		38C061B02815432C00A3CA85 /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
 		38C061B5281593BD00A3CA85 /* Event.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Event.hpp; sourceTree = "<group>"; };
 		38C061BA2815968E00A3CA85 /* ApplicationEvent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ApplicationEvent.hpp; sourceTree = "<group>"; };
+		38C6DF9A281E89E50082BB68 /* Layer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Layer.cpp; sourceTree = "<group>"; };
+		38C6DF9B281E89E50082BB68 /* Layer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Layer.hpp; sourceTree = "<group>"; };
+		38C6DF9E281E8AAD0082BB68 /* LayerStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LayerStack.cpp; sourceTree = "<group>"; };
+		38C6DF9F281E8AAD0082BB68 /* LayerStack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LayerStack.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,15 +172,60 @@
 		3895028628166C210093E5D1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				384E8685281A47B0008D3D7B /* Input.hpp */,
 				3895028728166C210093E5D1 /* KeyCodes.hpp */,
 				3895028828166C210093E5D1 /* MouseCodes.hpp */,
+				3895028D281676110093E5D1 /* Base.hpp */,
+				38950291281676BE0093E5D1 /* Window.cpp */,
+				38950292281676BE0093E5D1 /* Window.hpp */,
+				38C061B02815432C00A3CA85 /* Log.cpp */,
+				38C061AE2815432C00A3CA85 /* Log.hpp */,
+				389502AA28167EDF0093E5D1 /* Assert.hpp */,
+				38C6DF9A281E89E50082BB68 /* Layer.cpp */,
+				38C6DF9B281E89E50082BB68 /* Layer.hpp */,
+				38C6DF9E281E8AAD0082BB68 /* LayerStack.cpp */,
+				38C6DF9F281E8AAD0082BB68 /* LayerStack.hpp */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		38950295281678BE0093E5D1 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				38950298281678E70093E5D1 /* MacWindow.cpp */,
+				38950299281678E70093E5D1 /* MacWindow.hpp */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		3895029C28167A9E0093E5D1 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				3895029D28167AAE0093E5D1 /* GraphicsContext.cpp */,
+				3895029E28167AAE0093E5D1 /* GraphicsContext.hpp */,
+				389502A128167BE60093E5D1 /* Renderer.cpp */,
+				389502A228167BE60093E5D1 /* Renderer.hpp */,
+				389502A528167C1A0093E5D1 /* RenderAPI.cpp */,
+				389502A628167C1A0093E5D1 /* RenderAPI.hpp */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		389502AE28167F7D0093E5D1 /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				389502B5281681BC0093E5D1 /* OpenGLContext.cpp */,
+				389502B6281681BD0093E5D1 /* OpenGLContext.hpp */,
+			);
+			path = OpenGL;
 			sourceTree = "<group>";
 		};
 		38C0619D2815414A00A3CA85 /* Hazel */ = {
 			isa = PBXGroup;
 			children = (
+				389502AE28167F7D0093E5D1 /* OpenGL */,
+				3895029C28167A9E0093E5D1 /* Render */,
+				38950295281678BE0093E5D1 /* Windows */,
 				3895028628166C210093E5D1 /* Core */,
 				38C061B3281593AC00A3CA85 /* Events */,
 				38C0619E2815418900A3CA85 /* Application.cpp */,
@@ -161,8 +233,6 @@
 				38C061AC2815432B00A3CA85 /* Core.hpp */,
 				38C061AF2815432C00A3CA85 /* EntryPoint.hpp */,
 				38C061AD2815432C00A3CA85 /* Hazel.hpp */,
-				38C061B02815432C00A3CA85 /* Log.cpp */,
-				38C061AE2815432C00A3CA85 /* Log.hpp */,
 			);
 			path = Hazel;
 			sourceTree = "<group>";
@@ -234,9 +304,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				389502A728167C1A0093E5D1 /* RenderAPI.cpp in Sources */,
+				3895029F28167AAE0093E5D1 /* GraphicsContext.cpp in Sources */,
+				38C6DFA0281E8AAD0082BB68 /* LayerStack.cpp in Sources */,
+				3895029A281678E70093E5D1 /* MacWindow.cpp in Sources */,
 				38C061B12815432C00A3CA85 /* Log.cpp in Sources */,
+				38C6DF9C281E89E50082BB68 /* Layer.cpp in Sources */,
 				3867FA1427772C0D005E1948 /* main.cpp in Sources */,
+				389502A328167BE60093E5D1 /* Renderer.cpp in Sources */,
 				38C061A02815418900A3CA85 /* Application.cpp in Sources */,
+				38950293281676BE0093E5D1 /* Window.cpp in Sources */,
+				389502B7281681BD0093E5D1 /* OpenGLContext.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 #ifndef EntryPoint_hpp
 #define EntryPoint_hpp
 
+#define HZ_ENABLE_ASSERTS
 extern Hazel::Application* Hazel::CreateApplication();
 
 int main(){
@@ -15,7 +16,7 @@ int main(){
     HZ_CORE_WARN("initialized log!");
     HZ_INFO("HELLO!");
     auto app = Hazel::CreateApplication();
-    app->Run();
+    app->Run();  
     delete app;
 }
 #endif /* EntryPoint_hpp */

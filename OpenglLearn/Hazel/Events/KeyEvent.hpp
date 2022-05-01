@@ -1,7 +1,7 @@
 #pragma one
 
 #include "Event.hpp"
-#include "Core/KeyCodes.hpp"
+#include "KeyCodes.hpp"
 
 namespace Hazel{
 class KeyEvent:public Event{
@@ -31,7 +31,7 @@ private:
 };
 class KeyReleasedEvent:public KeyEvent{
 public:
-    KeyReleasedEvent(cosnt KeyCode keycode):KeyEvent(KeyCode){}
+    KeyReleasedEvent(const KeyCode keycode):KeyEvent(keycode){}
     std::string ToString() const override{
         std::stringstream ss;
         ss<<"KeyReleasedEvent: "<<m_Keycode;
@@ -48,7 +48,7 @@ class KeyTypedEvent : public KeyEvent
 		std::string ToString() const override
 		{
 			std::stringstream ss;
-			ss << "KeyTypedEvent: " << m_KeyCode;
+			ss << "KeyTypedEvent: " << m_Keycode;
 			return ss.str();
 		}
 

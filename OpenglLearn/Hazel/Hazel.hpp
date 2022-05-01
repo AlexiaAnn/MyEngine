@@ -12,6 +12,7 @@
 #include "Application.hpp"
 #include "Log.hpp"
 #include "EntryPoint.hpp"
+#include "Layer.hpp"
 
 
 #endif /* Hazel_hpp */
