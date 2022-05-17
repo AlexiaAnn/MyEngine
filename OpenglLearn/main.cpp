@@ -9,13 +9,10 @@ public:
     void OnEvent(Hazel::Event& event) override{
         HZ_TRACE("ExampleLayer {0}",event.ToString());
     }
-    
 };
 class Sandbox:public Hazel::Application{
 public:
-    Sandbox(){
-        PushLayer(new ExampleLayer());
-    }
+    Sandbox(){}
     ~Sandbox(){}
 };
 Hazel::Application* Hazel::CreateApplication(){

@@ -51,10 +51,10 @@ namespace Hazel
         glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
         glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
         m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
-        glfwMakeContextCurrent(m_Window);
+        m_Context = GraphicsContext::Create(m_Window);
+        m_Context->Init();
         glfwSetWindowUserPointer(m_Window, &m_Data);
         SetVSync(true);
-        gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 
         glfwSetWindowSizeCallback(m_Window, [](GLFWwindow* window,int width,int height){
             WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);

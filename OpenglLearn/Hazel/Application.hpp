@@ -12,6 +12,10 @@
 #include "Log.hpp"
 #include "Window.hpp"
 #include "LayerStack.hpp"
+#include "Input.hpp"
+#include "Buffer.hpp"
+#include "Shader.hpp"
+#include "VertexArray.hpp"
 namespace Hazel {
 class Application{
 public:
@@ -20,10 +24,15 @@ public:
     void PushLayer(Layer* layer);
     void PushOverLay(Layer* layer);
     
+    Window& GetWindow(){return *m_Window;}
+    
     void Run();
     void OnEvent(Event& e);
     bool OnWindowClose(WindowCloseEvent& e);
+    
+    static Application& Get(){return *s_Instance;}
 private:
+    static Application* s_Instance;
     Scope<Window> m_Window;
     LayerStack m_LayerStack;
     bool m_Running=true;
